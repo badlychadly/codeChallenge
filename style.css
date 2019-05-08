@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+body {
+    background: linear-gradient(172deg, #8925db 18%, #8142f7 18%, #8142f7 68%, rgba(115,111,242,1) 68%, rgba(122,118,243,1) 84%, rgba(255,255,255,1) 84%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+}
