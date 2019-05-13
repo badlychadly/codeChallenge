@@ -205,7 +205,8 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 3rem;
-    margin-left: auto;;
+    /* margin-left: auto; */
+    justify-content: center;
 }
 
 
@@ -249,7 +250,7 @@ body {
 
 
 .service-card {
-    max-width: 500px;
+    /* max-width: 500px; */
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -276,6 +277,7 @@ body {
     margin-bottom: .75rem;
     margin-top: 0;
     font-size: 1.25rem;
+    font-weight: 500;
 }
 
 
@@ -284,4 +286,25 @@ body {
     font-size: 1rem;
     font-weight: lighter;
     margin: 0;
+}
+
+
+.create-contact {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: auto; */
+}
+
+.purple-heading {
+    margin: 0;
+    font-weight: 200;
+    color: #8142f7;
+}
+
+.darker-heading {
+    margin: 0;
+    font-weight: 300;
+    color: #8925db;
 }
