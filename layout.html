@@ -20,32 +20,51 @@
     
     
     <div class="container">
-        <nav class="nav-menu">
+        <nav class="nav-menu" id="navMenu">
             <a href="#" class="nav-brand">MyWebNow</a>
-            <div class="con">
-                <ul class="nav-list">
-                    <li><a href="#" class="nav-item">Home</a></li>
-                    <li><a href="#" class="nav-item">Why us</a></li>
-                    <li><a href="#" class="nav-item">Contact us</a></li>
-                </ul>
-                <ul class="nav-list">
-                    <li><a class="nav-item" href="#">Login</a></li>
-                </ul>
-                    <button class="nav-button">Support</button>
 
+                  
+            <div class="con">
+                <div class="collapse" id="navCollapse">
+                    <ul class="nav-list toggle">
+                        <li><a href="#" class="nav-item">Home</a></li>
+                        <li><a href="#" class="nav-item">Why us</a></li>
+                        <li><a href="#" class="nav-item">Contact us</a></li>
+                    </ul>
+                    <ul class="nav-list toggle">
+                        <li><a class="nav-item" href="#">Login</a></li>
+                    </ul>
+
+                </div>
+                
             </div>
+                    <div class="nav-list btns">
+                        <button class="nav-icon" onclick="toggleMenu()">
+                                <div class="icon"></div>
+                                <div class="icon"></div>
+                                <div class="icon"></div>
+          
+                        </button>
+                        <button class="nav-button">Support</button>
+    
+                    </div>
         </nav>
+
+
+
+
 
         <div class="header">
             <h1 class="no-margin">Get a Website in</h1>
             <h1 class="no-margin">15 minutes&nbsp;<span class="text-green">or less</span></h1>
-            <form class="">
-                <div class="search-form">
+            <form class="search-form">
+                <!-- <div class="search-form"> -->
                     <input class="search-input" type="search" placeholder="Write your domain name here.." aria-label="Search">
                     <button class="search-button" type="submit">Search</button>
 
-                </div>
+                <!-- </div> -->
             </form>
+            <!-- <button>Search</button> -->
         </div>
 
         
@@ -133,23 +152,19 @@
 
                         
 
+            <div class="create-contact">
+                <div class="">
+                    <h2 class="purple-heading">Are you ready?</h2>
+                    <h2 class="darker-heading">create an account, or contact us.</h2>
+    
+                </div>
+                <div style="margin-left: .5rem;">
+                    <button class="create-account">Create Your Account</button>
+                    <button class="contact-btn">Conatact Us</button>
+                </div>
+            </div>
         </div>
 
-        <div class="create-contact">
-            <div class="">
-                <h2 class="purple-heading">Are you ready?</h2>
-                <h2 class="darker-heading">create an account, or contact us.</h2>
-
-            </div>
-            <div class="inline-buttons">
-                <button style="background-color: #8142f7;">Create Your Account</button>
-                <button>Conatact Us</button>
-            </div>
-        </div>
-
-        
-        
-        
     </div>
     
     <footer>
@@ -202,6 +217,16 @@
             
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            let navCollapse = document.getElementById("navCollapse");
+            navCollapse.className === "collapse" ? (
+                navCollapse.className += " show"
+            ) : 
+            (navCollapse.className = "collapse")
+        }
+    </script>
     
 </body>
 </html>
